@@ -1,0 +1,406 @@
+/* ================================
+Imports
+================================= */
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,300,700,800);
+@import url('font-awesome.min.css');
+@import url('overwrite.css');
+@import url('dlmenu.css');
+@import url('animate.css');
+
+/* ================================
+General
+================================= */
+body{
+	margin:0;
+	padding:0;
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	line-height: 1.6em;
+	
+}
+
+h1 {
+	font-size: 36px;
+}
+h2 {
+	font-size: 32px;
+}
+h3 {
+	font-size: 28px;
+}
+h4 {
+	font-size: 24px;
+}
+h5 {
+	font-size: 20px;
+}
+h6 {
+	font-size: 18px;
+}
+
+h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
+	color: #3a3a3a;
+	font-weight: 700;
+	margin-bottom: 20px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+
+.lead{
+	font-weight: 400;
+}
+
+button {
+	display: inline-block;
+	margin-bottom: 0;
+	margin-bottom: 10px;
+	padding: 6px 12px;
+	border: 1px solid transparent;
+	vertical-align: middle;
+	text-align: center;
+	white-space: nowrap;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 1.428571429;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+button.navbar-toggle {
+	background: #2b2b2b;
+	border: none;
+	color: #fff;
+}
+
+.btn-theme,.btn-theme:hover,.btn-theme:focus{
+	color: #fff;
+}
+.btn-theme:hover{
+	background: transparent !important;
+	border-color: #999;
+	color: #999;
+}
+
+
+/* ================================
+margin, padding
+================================= */
+.mar-top0 {
+	margin-top: 0;
+}
+.mar-top10 {
+	margin-top: 10px;
+}
+.mar-top20 {
+	margin-top: 20px;
+}
+.mar-top30 {
+	margin-top: 30px;
+}
+.mar-top40 {
+	margin-top: 40px;
+}
+
+
+
+/* ================================
+Home sections
+================================= */
+
+.home-section {
+	width: 100%;
+	padding: 90px 0px 150px 0px;
+}
+
+/* --- heading --- */
+.section-heading {
+	margin-bottom: 70px;
+}
+	
+.section-heading h2 {
+	font-size: 38px;
+	text-transform: uppercase;
+}
+	
+.section-heading .heading-line {
+	margin:0 auto;
+	display: block;
+	height: 1px;
+	width: 80px;
+	background: #333;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+	
+/* --- section bg var --- */
+
+.bg-white {
+	background: #fff;
+}
+
+.bg-gray {
+	background: #f8f8f8;
+}
+
+.bg-dark {
+	background: #575757;
+}
+
+
+/* --- section content general color --- */
+
+.color-light h1,.color-light h2,.color-light h3,.color-light h4,.color-light h5,.color-light h6 {
+	color: #fff;
+}
+
+
+.color-light p {
+	color: #eee;
+}
+
+
+
+/* ================================
+Intro
+================================= */
+
+#intro{
+    height:auto;
+    width:100%;
+    background-color: #529abb;
+    background-image: url(../img/bg-mac.png);
+    background-position:center;
+    background-repeat:no-repeat;
+    overflow-y:hidden;
+    text-align:center;
+    position:relative;
+}
+
+.intro-text {
+	position:relative;
+	width:100%;
+	margin-top:200px;
+	z-index:1000;
+}
+#intro .brand {
+	margin-top: -80px;
+}
+.intro-text h1 a {
+	color:#fff;
+	text-align:center;
+	font-weight: 700;
+	font-size: 40px; 
+	line-height:1.1em;
+	padding-top:30px;
+	text-transform: uppercase;	
+}
+.intro-text h1 a:hover {
+	text-decoration: none;
+}
+
+.line-spacer {
+	width: 20%;
+	margin:0 auto;
+	margin-top: 20px;
+	margin-bottom: 25px;
+	border-bottom:1px solid #fff;
+}
+
+.intro-text p span {
+	color:#fff;
+	font-size: 24px;
+	text-align:center;
+	font-weight: 300;
+}
+
+/* form */
+.w3_agile_login input[type="email"], 
+.w3_agile_login input[type="text"], 
+.w3_agile_login input[type="password"],
+.agile_its_registration input[type="text"],
+.agile_its_registration input[type="number"],
+.agile_its_registration input[type="password"],
+.agile_its_registration select,
+.agile_its_registration textarea,
+.agile_its_registration input[type="email"],
+.agile_its_registration input[type="date"]{
+    padding: 0.7em 1em;
+    margin: 1em 0em 1em 0;
+    color: white;
+    width: 90%;
+	background: transparent;
+	border: 1px solid #d9d9ce;
+	font-size:0.85em;
+	outline: none;
+	letter-spacing: 1px;
+}
+.w3_agile_login p , 
+.agile_its_registration  p{
+	font-size: 1em;
+	color: #dcffff;
+}
+.w3_agile_login input[type="submit"], 
+.w3_agile_login input[type="reset"]{
+	width:100%;
+    text-transform: uppercase;
+    background: #aed2e2;
+    outline: none;
+    border: none;
+    cursor: pointer;
+	color: #000;
+	font-size:0.85em;
+	font-weight: 600;
+	padding: 0.7em 0;
+	letter-spacing: 1px;
+}
+.w3_agile_login input[type="submit"]:hover,
+.w3_agile_login input[type="reset"]:hover,
+.agile_its_registration input[type="submit"]:hover,
+.agile_its_registration input[type="reset"]:hover{
+	color: #000;
+	background: #fff;
+}
+.login_w3ls{
+    margin: 1.5em 0 0;
+    text-align:center;
+	
+}
+.login_w3ls a {
+	color: #dcffff;
+	font-size: 1em;
+}
+.login_w3ls a:hover {
+	color: #fff;
+}
+
+.agile_its_registration input[type="submit"],
+.agile_its_registration input[type="reset"] {
+	width: 49.4%;
+    background: #aed2e2;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    color: #000;
+	font-weight: 600;
+	text-transform: uppercase;
+	padding: 0.6em 0;
+	letter-spacing: 1px;
+	font-size:0.85em;
+}
+.check {
+    margin: 1em 0 1.5em;
+}
+.checkbox {
+    position: relative;
+	padding-left: 38px !important;
+    cursor: pointer;
+}
+.checkbox i {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    display: block;
+    width: 15px;
+    height: 15px;
+    outline: none;
+    border: 2px solid #EDEDED;
+    background: #fff;
+}
+.check label {
+	margin: 0;
+    font-size: .85em;
+    color: #dcffff;
+}
+.checkbox input + i:after,.radio input + i:after {
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.1s;
+    -o-transition: opacity 0.1s;
+    -ms-transition: opacity 0.1s;
+    -moz-transition: opacity 0.1s;
+    -webkit-transition: opacity 0.1s;
+}
+.checkbox input:checked + i:after,.radio input:checked + i:after{
+    opacity: 1;
+}
+.checkbox input,.radio input {
+    position: absolute;
+    left: -9999px;
+}
+.checkbox input + i:after {
+    content: '';
+    top: 0px;
+    left: 0px;
+    width: 15px;
+    height: 15px;
+    font: normal 12px/16px FontAwesome;
+    text-align: center;
+}
+/* //form */
+
+/* ================================
+Bottom widget
+================================= */
+ul.social-network {	
+	margin: 0;
+	margin-left:0;
+	padding-left: 0;
+	list-style: none;
+}
+ul.social-network li {
+	display: inline;
+	margin: 5px 5px;
+}
+
+ul.social-network li a:hover span .fa-circle {
+	color: #2b2b2b;
+}
+
+/* ================================
+Footer
+================================= */
+footer {
+	background: #2b2b2b;
+	color: #ddd;
+	padding: 50px 0 30px;
+}
+
+
+/* ================================
+more media queries
+================================= */
+
+@media (max-width:768px) {
+	#intro{
+		background-size:100%;
+	}
+	.box-team, .box-team img {
+		text-align: center;
+	}
+	.box-team img {
+		float: none;
+		margin:0 auto;
+	}	
+	.box-team {
+		margin-bottom: 30px;
+	}
+
+}
+
+@media (max-width:992px) {
+	.service p{
+			margin-bottom: 60px;
+	}
+
+}
+
+@media (max-width:480px){
+	#intro{
+		background-image: none;
+	}
+}
